@@ -13,11 +13,12 @@ on:
         - '3h' 
         - '5h40m'
         - '6h00m'
+        - '22h00m'
 
 jobs:
   Premium-RDP-Setup:
     runs-on: windows-latest
-    timeout-minutes: 360
+    timeout-minutes: 1320
     
     steps:
       # BANNER CHÀO MỪNG
@@ -271,6 +272,7 @@ jobs:
               "3h" { $totalMinutes = 180; $displayTime = "3 giờ" }
               "5h40m" { $totalMinutes = 340; $displayTime = "5 giờ 40 phút" }
               "6h00m" { $totalMinutes = 360; $displayTime = "6 giờ 00 phút" }
+              "22h00m" { $totalMinutes = 1320; $displayTime = "22 giờ 00 phút" }
           }
           
           # Tính thời gian chính xác
